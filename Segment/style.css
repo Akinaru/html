@@ -1,0 +1,94 @@
+body{ 
+    padding: 0;
+    margin: 0;
+    background-color: darkcyan;
+}
+
+/* TU PEUX ENLEVER LE BLOC AU DESSUS */
+
+.afficheur{
+    width: 200px;
+    height: 300px;
+    position: relative;
+}
+
+.afficheur div{   
+    background-color: darkslategrey;
+    border-radius: 20px;
+    position: absolute;
+}
+.a{/* SEGMENT HAUT */
+    top: 0;
+    left: 5%;
+    width: 90%;
+    height: 40px;
+    opacity: 1;
+    transition: 0.5s;
+}
+.b{/* SEGMENT GAUCHE HAUT */
+    top: 5%;
+    left: 0;
+    width: 40px;
+    height: 45%;
+}
+.c{/* SEGMENT GAUCHE BAS */
+    bottom: 5%;
+    left: 0;
+    width: 40px;
+    height: 45%;    
+}
+.d{/* SEGMENT BAS */
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 40px;
+}
+.e{/* SEGMENT DROIT HAUT */
+    top: 5%;
+    right: 0;
+    width: 40px;
+    height: 45%;
+}
+.f{/* SEGMENT DROIT BAS*/
+    bottom: 5%;
+    right: 0;
+    width: 40px;
+    height: 45%;    
+}
+.g{/* SEGMENT MILLIEU */
+    top: 50%;
+    left: 5%;
+    width: 90%;
+    height: 40px;
+    transform: translate(0, -50%);
+}
+
+.a.remove{opacity: 0;transition: 0.5s;}
+.b.remove{opacity: 0;transition: 0.5s;}
+.c.remove{opacity: 0;transition: 0.5s;}
+.d.remove{opacity: 0;transition: 0.5s;}
+.e.remove{opacity: 0;transition: 0.5s;}
+.f.remove{opacity: 0;transition: 0.5s;}
+.g.remove{opacity: 0;transition: 0.5s;}
+
+.separateur{
+    width: 40px;
+    height: 300px;
+    border-radius: 20px;
+    position: relative;
+}
+
+.separateur div{
+    position: absolute;
+    background-color: darkslategrey;
+    border-radius: 20px;
+    height: 40px;
+    width: 40px;
+}
+
+.separateur .haut{
+    top: 35%;
+}
+.separateur .bas{
+    bottom: 35%;
+}
